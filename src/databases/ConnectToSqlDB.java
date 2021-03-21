@@ -15,6 +15,7 @@ import java.util.Properties;
 
 import parser.Student;
 
+
 public class ConnectToSqlDB {
 
     public static Connection connect = null;
