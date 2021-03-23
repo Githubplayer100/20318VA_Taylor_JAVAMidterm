@@ -2,9 +2,9 @@ package databases;
 
 public class User {
 
-    String stName;
-    String stID;
-    String stDOB;
+    String stName = "Taylor";
+    String stID = "20318";
+    String stDOB = "05082000";
 
     public User() {
     }
@@ -26,22 +26,27 @@ public class User {
     }
 
     public void setStName(String stName) {
+
         this.stName = stName;
     }
 
     public String getStID() {
+
         return stID;
     }
 
     public void setStID(String stID) {
+
         this.stID = stID;
     }
 
     public String getStDOB() {
+
         return stDOB;
     }
 
     public void setStDOB(String stDOB) {
+
         this.stDOB = stDOB;
     }
 }

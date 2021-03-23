@@ -1,5 +1,7 @@
 package design;
 
+import java.util.ArrayList;
+
 public interface Employee {
 	
 	/*
@@ -13,11 +15,18 @@ public interface Employee {
         and then implement these in a concrete class.
      */
 
+    int employeeYearsOfExperience = 0;
+    String level = null;
+
+
+
     // employeeId() will return employee id.
     int employeeId();
 
+
     //employeeName() will return employee name
     String employeeName();
+
 
     //assignDepartment() will assign employee to departments
     void assignDepartment();
@@ -27,5 +36,26 @@ public interface Employee {
 
     //employee benefit
     void benefitLayout();
+
+    // employeeDOB() will return date of birth
+    int employeeDOB();
+
+    // employeeSSN() will return social security number
+    int employeeSSN();
+
+    // employeePTOrFT() will return full time or part time
+    void employeePTOrFT();
+
+    // employeeIsWorkingFromHome() will return location of workspace
+    boolean employeeIsWorkingFromHome();
+
+    // employeeExperience() will return employee's previous experience
+    int employeeExperience(int employeeYearsOfExperience);
+
+    //employeeJobLevel() will return of job assigned
+    static String employeeJobLevel(String level){
+        return null;
+    }
+
 
 }

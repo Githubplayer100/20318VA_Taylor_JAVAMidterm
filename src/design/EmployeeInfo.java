@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends AbstractEmployeeData implements Employee{
 
     /*
     This class should implement the Employee interface. You can do that by directly implementing it, however you must
@@ -21,7 +21,14 @@ public class EmployeeInfo {
      * Make sure to declare and use static, non-static & final fields
      */
     static String companyName;
+    int companyDOB;
+    String companyLocation;
 
+    private int companyContact;
+
+    static final String companyLogo;
+    static{companyLogo="pada pada pa I'm dying from this midterm";}
+    final boolean isOpen = true;
     /*
      You must implement the logic for below 2 methods and
         following 2 methods are prototype as well for other methods need to be design,
@@ -31,13 +38,21 @@ public class EmployeeInfo {
     /*
      You must have/use multiple constructors
      */
-    public EmployeeInfo(int employeeId) {
+    public EmployeeInfo(int id, String name, String department, int hours, int daysOfWeek, int salary, String benefits, int dob, int ssn, String frOrPT, boolean workspace, int employeeYearsOfExperience, String nationality, int startDate, boolean isAlive) {
+        super(id, name, department, hours, daysOfWeek, salary, benefits, dob, ssn, frOrPT, workspace, employeeYearsOfExperience, nationality, startDate, isAlive);
+    }
+
+    public EmployeeInfo() {
 
     }
 
-    public EmployeeInfo(String name, int employeeId) {
+    public EmployeeInfo(int companyDOB, String companyLocation, int companyContact) {
+        this.companyDOB = companyDOB;
+        this.companyLocation = companyLocation;
+        this.companyContact = companyContact;
 
     }
+
 
     /*
      You need to implement the logic of this method as such:
@@ -74,6 +89,78 @@ public class EmployeeInfo {
 
         return total;
     }
+
+    @Override
+    public int employeeId() {
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefitLayout() {
+
+    }
+
+    @Override
+    public int employeeDOB() {
+        return 0;
+    }
+
+    @Override
+    public int employeeSSN() {
+        return 0;
+    }
+
+    @Override
+    public void employeePTOrFT() {
+
+    }
+
+    @Override
+    public boolean employeeIsWorkingFromHome() {
+        return false;
+    }
+
+    @Override
+    public int employeeExperience(int employeeYearsOfExperience) {
+        return super.employeeExperience(employeeYearsOfExperience);
+    }
+
+    @Override
+    public String employeeJobLevel() {
+        return super.employeeJobLevel();
+    }
+
+    @Override
+    public void employeeNationality(String nationality) {
+
+    }
+
+    @Override
+    public int employeeStartDate(int startDate) {
+        return super.employeeStartDate(startDate);
+    }
+
+    @Override
+    public boolean employeeIsAlive(boolean isAlive) {
+        return super.employeeIsAlive(isAlive);
+    }
+
+
 
     private static class DateConversion {
 

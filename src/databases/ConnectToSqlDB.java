@@ -16,7 +16,7 @@ import java.util.Properties;
 import parser.Student;
 
 
-public class ConnectToSqlDB {
+public class ConnectToSqlDB extends User{
 
     public static Connection connect = null;
     public static Statement statement = null;
