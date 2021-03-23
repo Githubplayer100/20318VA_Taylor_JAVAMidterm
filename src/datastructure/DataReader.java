@@ -27,8 +27,7 @@ public class DataReader {
          * Demonstrate how to use Stack using push, peek, search & pop methods.
          * Use For-Each & While-loop with Iterator to retrieve data.
          */
-
-        String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+            String selfDrivingCar = "src/data/self-driving-car";
 
         //            //FileReader Fetches/Handles Files in Java
         try (FileReader fr = new FileReader(selfDrivingCar)) { //fileName=Path of file
