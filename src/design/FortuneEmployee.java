@@ -124,7 +124,7 @@ public class FortuneEmployee extends EmployeeInfo implements Employee{
     @Override
     public void assignComputer() {
         System.out.println("Assign employee a cubicle and a computer");
-        super.assignComputer();
+            super.assignComputer();
     }
 
     @Override

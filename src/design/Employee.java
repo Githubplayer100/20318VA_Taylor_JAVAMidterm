@@ -3,7 +3,7 @@ package design;
 import java.util.ArrayList;
 
 public interface Employee extends employeeDatabase {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
     }
 	/*Employee is an Interface which contains multiple unimplemented methods.Again few methods
@@ -13,33 +13,33 @@ public interface Employee extends employeeDatabase {
     //and then implement these in a concrete class.
 
     //employeeId() will return employee id.
-    public int employeeId();
+    int employeeId();
 
     //employeeName() will return employee name
-    public String employeeName();
+    String employeeName();
 
     //assignDepartment() will assign employee to departments
-    public void assignDepartment();
+    void assignDepartment();
 
     //calculate employee salary
-    public int calculateSalary();
+    int calculateSalary();
 
     //employee benefit
-    public void benefitLayout();
+    void benefitLayout();
 
     // assignComputer() will assign employee to a computer
-    public void assignComputer();
+    void assignComputer();
 
     // assignManager() will assign employee a manager
-    public void assignManager();
+    void assignManager();
 
     // employeeAddress(); will look at employee's present location to see if relocation is needed
-    public void employeeAddress();
+    void employeeAddress();
 
     // employeeJobRole(); will assign the employee a role in his department
-    public void employeeJobRole();
+    void employeeJobRole();
 
-    public void printEmployeeInfo();
+    void printEmployeeInfo();
 }
 
 // Interface inside a Interface
